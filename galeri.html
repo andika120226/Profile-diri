@@ -10,12 +10,16 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body class="bg-gambar">
     <header class="site-header">
       <nav class="navbar" aria-label="Navigasi utama">
-        <a class="logo" href="index.html">NAH</a>
+        <a class="logo" href="index.html">NUH ANDIKA HARYANTO</a>
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
           <li><a href="dokumentasi.html">Dokumentasi Projek</a></li>
@@ -26,50 +30,375 @@
     </header>
 
     <main>
-      <section class="section gallery">
+      <!-- PAGE HEADER -->
+      <section class="section page-header">
         <div class="container center">
-          <h1 class="section-title">Galeri Gambar</h1>
-          <p class="description">
-            Kumpulan gambar favorit dari game dan hobi menggambar.
+          <h1 class="title" style="color: white;">Galeri Gambar</h1>
+          <p class="subtitle" style="color: white;">
+            Koleksi sketchbook dan karya seni ilustrasi favorit saya.
           </p>
-          <div class="gallery-grid">
-            <figure class="gallery-item">
-              <img
-                src="game/arlechino.jpg"
-                alt="Karakter RPG gaya anime"
-                loading="lazy"
-                decoding="async"
-              />
-            </figure>
-            <figure class="gallery-item">
-              <img
-                src="game/yelen.jpg"
-                alt="Karakter RPG bergaya futuristik"
-                loading="lazy"
-                decoding="async"
-              />
-            </figure>
-            <figure class="gallery-item">
-              <img
-                src="gamabar/monster.jpg"
-                alt="Sketsa monster"
-                loading="lazy"
-                decoding="async"
-              />
-            </figure>
-            <figure class="gallery-item">
-              <img
-                src="gamabar/couple.jpg"
-                alt="Sketsa karakter"
-                loading="lazy"
-                decoding="async"
-              />
-            </figure>
-          </div>
         </div>
       </section>
+
+      <!-- SKETCHBOOK GALLERY SECTION -->
+      <section class="sketchbook-gallery">
+        <div class="gallery-container">
+
+          <!-- SKETCHBOOK 1: Personal Sketches A5 -->
+          <div class="sketchbook-card">
+            <div class="sketchbook-title">Buku Sketsa A5 #1</div>
+            <div class="sketchbook-cover">
+              <div class="book-spine"></div>
+              <div class="book-opened">
+                <div class="book-page left-page">
+                  <div class="page-content">
+                    <img src="gambar/gambar.webp" alt="Sketsa 1">
+                  </div>
+                </div>
+                <div class="book-page right-page">
+                  <div class="page-content">
+                    <img src="gambar/gambar1.webp" alt="Sketsa 2">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sketchbook-meta">8 Halaman</div>
+          </div>
+
+          <!-- SKETCHBOOK 2: Character Design A5 -->
+          <div class="sketchbook-card">
+            <div class="sketchbook-title">Character Design A5</div>
+            <div class="sketchbook-cover">
+              <div class="book-spine"></div>
+              <div class="book-opened">
+                <div class="book-page left-page">
+                  <div class="page-content">
+                    <img src="gambar/gambar2.webp" alt="Karakter 1">
+                  </div>
+                </div>
+                <div class="book-page right-page">
+                  <div class="page-content">
+                    <img src="gambar/gambar3.webp" alt="Karakter 2">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sketchbook-meta">6 Halaman</div>
+          </div>
+
+          <!-- SKETCHBOOK 3: Fantasy & Landscapes A5 -->
+          <div class="sketchbook-card">
+            <div class="sketchbook-title">Fantasy & Landscapes A5</div>
+            <div class="sketchbook-cover">
+              <div class="book-spine"></div>
+              <div class="book-opened">
+                <div class="book-page left-page">
+                  <div class="page-content">
+                    <img src="gambar/gambar4.webp" alt="Landscape 1">
+                  </div>
+                </div>
+                <div class="book-page right-page">
+                  <div class="page-content">
+                    <img src="gambar/gambar5.webp" alt="Landscape 2">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sketchbook-meta">7 Halaman</div>
+          </div>
+
+          <!-- SKETCHBOOK 4: Anime Studies A5 -->
+          <div class="sketchbook-card">
+            <div class="sketchbook-title">Anime Studies A5</div>
+            <div class="sketchbook-cover">
+              <div class="book-spine"></div>
+              <div class="book-opened">
+                <div class="book-page left-page">
+                  <div class="page-content">
+                    <img src="gambar/gambar6.webp" alt="Anime 1">
+                  </div>
+                </div>
+                <div class="book-page right-page">
+                  <div class="page-content">
+                    <img src="gambar/gambar7.webp" alt="Anime 2">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sketchbook-meta">9 Halaman</div>
+          </div>
+
+          <!-- SKETCHBOOK 5: Digital & Concept A5 -->
+          <div class="sketchbook-card">
+            <div class="sketchbook-title">Digital & Concept A5</div>
+            <div class="sketchbook-cover">
+              <div class="book-spine"></div>
+              <div class="book-opened">
+                <div class="book-page left-page">
+                  <div class="page-content">
+                    <img src="gambar/gambar8.webp" alt="Concept 1">
+                  </div>
+                </div>
+                <div class="book-page right-page">
+                  <div class="page-content">
+                    <img src="gambar/gambar9.webp" alt="Concept 2">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sketchbook-meta">10 Halaman</div>
+          </div>
+
+          <!-- SKETCHBOOK 6: Mixed Media A5 -->
+          <div class="sketchbook-card">
+            <div class="sketchbook-title">Mixed Media A5</div>
+            <div class="sketchbook-cover">
+              <div class="book-spine"></div>
+              <div class="book-opened">
+                <div class="book-page left-page">
+                  <div class="page-content">
+                    <img src="gambar/gambar10.webp" alt="Mixed 1">
+                  </div>
+                </div>
+                <div class="book-page right-page">
+                  <div class="page-content">
+                    <img src="gambar/gambar11.webp" alt="Mixed 2">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sketchbook-meta">8 Halaman</div>
+          </div>
+
+          <!-- SKETCHBOOK 7: Quick Sketches A5 -->
+          <div class="sketchbook-card">
+            <div class="sketchbook-title">Quick Sketches A5</div>
+            <div class="sketchbook-cover">
+              <div class="book-spine"></div>
+              <div class="book-opened">
+                <div class="book-page left-page">
+                  <div class="page-content">
+                    <img src="gambar/gambar12.webp" alt="Quick 1">
+                  </div>
+                </div>
+                <div class="book-page right-page">
+                  <div class="page-content">
+                    <img src="gambar/gambar13.webp" alt="Quick 2">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sketchbook-meta">5 Halaman</div>
+          </div>
+
+          <!-- SKETCHBOOK 8: Portrait Studies A5 -->
+          <div class="sketchbook-card">
+            <div class="sketchbook-title">Portrait Studies A5</div>
+            <div class="sketchbook-cover">
+              <div class="book-spine"></div>
+              <div class="book-opened">
+                <div class="book-page left-page">
+                  <div class="page-content">
+                    <img src="gambar/gambar14.webp" alt="Portrait 1">
+                  </div>
+                </div>
+                <div class="book-page right-page">
+                  <div class="page-content">
+                    <img src="gambar/gambar15.webp" alt="Portrait 2">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sketchbook-meta">6 Halaman</div>
+          </div>
+
+          <!-- SKETCHBOOK 9: Fashion Design A5 -->
+          <div class="sketchbook-card">
+            <div class="sketchbook-title">Fashion Design A5</div>
+            <div class="sketchbook-cover">
+              <div class="book-spine"></div>
+              <div class="book-opened">
+                <div class="book-page left-page">
+                  <div class="page-content">
+                    <img src="gambar/gambar16.webp" alt="Fashion 1">
+                  </div>
+                </div>
+                <div class="book-page right-page">
+                  <div class="page-content">
+                    <img src="gambar/gambar17.webp" alt="Fashion 2">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sketchbook-meta">7 Halaman</div>
+          </div>
+
+          <!-- SKETCHBOOK 10: Nature & Animals A5 -->
+          <div class="sketchbook-card">
+            <div class="sketchbook-title">Nature & Animals A5</div>
+            <div class="sketchbook-cover">
+              <div class="book-spine"></div>
+              <div class="book-opened">
+                <div class="book-page left-page">
+                  <div class="page-content">
+                    <img src="gambar/gambar18.webp" alt="Nature 1">
+                  </div>
+                </div>
+                <div class="book-page right-page">
+                  <div class="page-content">
+                    <img src="gambar/gambar19.webp" alt="Nature 2">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sketchbook-meta">8 Halaman</div>
+          </div>
+
+          <!-- SKETCHBOOK 11: Daily Doodles A5 -->
+          <div class="sketchbook-card">
+            <div class="sketchbook-title">Daily Doodles A5</div>
+            <div class="sketchbook-cover">
+              <div class="book-spine"></div>
+              <div class="book-opened">
+                <div class="book-page left-page">
+                  <div class="page-content">
+                    <img src="gambar/gambar20.webp" alt="Doodle 1">
+                  </div>
+                </div>
+                <div class="book-page right-page">
+                  <div class="page-content">
+                    <img src="gambar/gambar21.webp" alt="Doodle 2">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sketchbook-meta">10 Halaman</div>
+          </div>
+
+          <!-- SKETCHBOOK 12: Special Edition A4 -->
+          <div class="sketchbook-card">
+            <div class="sketchbook-title">Special Edition A4</div>
+            <div class="sketchbook-cover">
+              <div class="book-spine"></div>
+              <div class="book-opened">
+                <div class="book-page left-page">
+                  <div class="page-content">
+                    <img src="gambar/gambar22.webp" alt="Special 1">
+                  </div>
+                </div>
+                <div class="book-page right-page">
+                  <div class="page-content">
+                    <img src="gambar/gambar23.webp" alt="Special 2">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sketchbook-meta">12 Halaman</div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- LIGHTBOX MODAL -->
+      <div id="lightboxModal" class="lightbox-modal">
+        <div class="lightbox-content">
+          <button class="lightbox-close" aria-label="Close">&times;</button>
+          <img id="lightboxImage" src="" alt="">
+          <div class="lightbox-info">
+            <div class="lightbox-title" id="lightboxTitle"></div>
+            <div class="lightbox-nav">
+              <button class="lightbox-prev" aria-label="Previous image">❮ Sebelumnya</button>
+              <button class="lightbox-next" aria-label="Next image">Berikutnya ❯</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
+    <!-- PROFESSIONAL FOOTER -->
+    <footer class="site-footer">
+      <div class="footer-content">
+        <!-- Social Media Icons -->
+        <div class="social-links">
+          <a
+            href="https://wa.me/6282175424507"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social-link"
+            aria-label="WhatsApp"
+          >
+            <div class="social-icon-circle">
+              <i class="fab fa-whatsapp"></i>
+            </div>
+            <span class="social-label">WhatsApp</span>
+          </a>
+          <a
+            href="https://instagram.com/aandzzzzyy"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social-link"
+            aria-label="Instagram"
+          >
+            <div class="social-icon-circle">
+              <i class="fab fa-instagram"></i>
+            </div>
+            <span class="social-label">Instagram</span>
+          </a>
+          <a
+            href="https://www.tiktok.com/@lexsenio"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social-link"
+            aria-label="TikTok"
+          >
+            <div class="social-icon-circle">
+              <i class="fab fa-tiktok"></i>
+            </div>
+            <span class="social-label">TikTok</span>
+          </a>
+          <a
+            href="mailto:nuhdika173@gmail.com"
+            class="social-link"
+            aria-label="Email"
+          >
+            <div class="social-icon-circle">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <span class="social-label">Email</span>
+          </a>
+          <a href="#" class="social-link" aria-label="Discord">
+            <div class="social-icon-circle">
+              <i class="fab fa-discord"></i>
+            </div>
+            <span class="social-label">Discord</span>
+          </a>
+          <a href="#" class="social-link" aria-label="LinkedIn">
+            <div class="social-icon-circle">
+              <i class="fab fa-linkedin"></i>
+            </div>
+            <span class="social-label">LinkedIn</span>
+          </a>
+          <a href="#" class="social-link" aria-label="Facebook">
+            <div class="social-icon-circle">
+              <i class="fab fa-facebook"></i>
+            </div>
+            <span class="social-label">Facebook</span>
+          </a>
+        </div>
+
+        <!-- Divider -->
+        <div class="footer-divider"></div>
+
+        <!-- Copyright -->
+        <p class="footer-copyright">
+          &copy; 2026 Nuh Andika Haryanto. All rights reserved. | Bandar
+          Lampung, Indonesia
+        </p>
+      </div>
+    </footer>
+
     <script src="script.js"></script>
+    <script src="script-galeri-new.js"></script>
+    <script src="responsive-bg.js"></script>
   </body>
 </html>

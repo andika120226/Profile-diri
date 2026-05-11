@@ -33,13 +33,50 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   color: var(--text-main);
-  background: linear-gradient(
-    135deg,
-    var(--bg-start),
-    var(--bg-end)
-  ); /* Sky blue gradient */
+  background-color: #e7f6ff;
   min-height: 100vh;
-  line-height: 1.6;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow-x: hidden;
+}
+
+body.bg-dokumentasi {
+  background-image: url("game/banner2.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center top;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* Mobile optimization */
+@media (max-width: 480px) {
+  body.bg-dokumentasi {
+    background-position: center 0;
+    background-attachment: scroll;
+    background-size: cover;
+  }
+}
+
+/* Tablet optimization */
+@media (min-width: 481px) and (max-width: 1023px) {
+  body.bg-dokumentasi {
+    background-position: center center;
+    background-attachment: scroll;
+    background-size: cover;
+  }
+}
+
+/* Desktop optimization - parallax effect */
+@media (min-width: 1024px) {
+  body.bg-dokumentasi {
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+  }
 }
 
 img {
@@ -144,6 +181,28 @@ img {
   gap: 16px;
 }
 
+.project-card {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 40px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+
+.project-card .content,
+.project-card .portrait-grid,
+.project-card .gallery-container,
+.project-card .image-stack,
+.project-card .project-image-container {
+  flex: 1;
+  width: 100%;
+  max-width: 100%;
+}
+
 /* ========================================
    TYPOGRAPHY
    ======================================== */
@@ -199,10 +258,9 @@ img {
    (Text Left, 2 Portrait Images Right)
    ======================================== */
 .pkm-section {
-  background: var(--surface);
-  border-radius: 24px;
-  margin: 0 auto;
-  max-width: calc(var(--container-max-width) + 48px);
+  background: transparent !important;
+  box-shadow: none !important;
+  padding: 0 !important;
 }
 
 /* Portrait Image Grid: 2 columns on mobile, side-by-side */
@@ -226,10 +284,9 @@ img {
    (Image Left, Text Right with CTA Button)
    ======================================== */
 .kilau-section {
-  background: var(--surface);
-  border-radius: 24px;
-  margin: 0 auto;
-  max-width: calc(var(--container-max-width) + 48px);
+  background: transparent !important;
+  box-shadow: none !important;
+  padding: 0 !important;
 }
 
 /* Project Mockup Image Container */
@@ -307,10 +364,9 @@ img {
    (Text Left, Horizontal Scrolling Gallery Right)
    ======================================== */
 .ubuntu-section {
-  background: var(--surface);
-  border-radius: 24px;
-  margin: 0 auto;
-  max-width: calc(var(--container-max-width) + 48px);
+  background: transparent !important;
+  box-shadow: none !important;
+  padding: 0 !important;
 }
 
 /* Gallery Container with Arrow Buttons */
@@ -387,10 +443,9 @@ img {
    ======================================== */
 .debian-section,
 .owncloud-section {
-  background: var(--surface);
-  border-radius: 24px;
-  margin: 0 auto;
-  max-width: calc(var(--container-max-width) + 48px);
+  background: transparent !important;
+  box-shadow: none !important;
+  padding: 0 !important;
 }
 
 /* Image Stack: Grid layout for screenshots */
@@ -437,6 +492,19 @@ img {
     max-width: 50%;
   }
 
+  .project-card {
+    flex-wrap: nowrap;
+  }
+
+  .project-card .content,
+  .project-card .portrait-grid,
+  .project-card .gallery-container,
+  .project-card .image-stack,
+  .project-card .project-image-container {
+    flex: 1;
+    max-width: 50%;
+  }
+
   /* Portrait grid stays 2 columns on desktop */
   .portrait-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -464,9 +532,234 @@ img {
   }
 }
 
+@media (max-width: 899px) {
+  .project-card {
+    flex-direction: column;
+  }
+}
+
 /* Tablet range: Optimize portrait grid */
 @media (min-width: 600px) and (max-width: 899px) {
   .portrait-grid {
     max-width: 600px;
+  }
+}
+
+/* ========================================
+   PROFESSIONAL FOOTER
+   ======================================== */
+
+.site-footer {
+  background: linear-gradient(135deg, #111827 0%, #1a202c 100%);
+  padding: 48px 24px 32px;
+  margin-top: 60px;
+}
+
+.footer-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+/* Social Media Links */
+.social-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.social-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.social-link:hover {
+  transform: translateY(-4px);
+}
+
+.social-icon-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  border-radius: 50%;
+  color: white;
+  font-size: 20px;
+  transition:
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+.social-link:hover .social-icon-circle {
+  transform: scale(1.1);
+  box-shadow:
+    0 8px 20px rgba(37, 99, 235, 0.5),
+    0 0 30px rgba(59, 130, 246, 0.4);
+}
+
+.social-label {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+  transition: color 0.3s ease;
+}
+
+.social-link:hover .social-label {
+  color: rgba(255, 255, 255, 1);
+}
+
+/* Divider Line */
+.footer-divider {
+  width: 100%;
+  max-width: 600px;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  margin: 8px 0;
+}
+
+/* Copyright Text */
+.footer-copyright {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* Responsive Footer */
+@media (min-width: 768px) {
+  .site-footer {
+    padding: 64px 32px 40px;
+  }
+
+  .social-links {
+    gap: 28px;
+  }
+
+  .social-icon-circle {
+    width: 52px;
+    height: 52px;
+    font-size: 22px;
+  }
+
+  .social-label {
+    font-size: 13px;
+  }
+
+  .footer-copyright {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .social-links {
+    gap: 32px;
+  }
+
+  .social-icon-circle {
+    width: 56px;
+    height: 56px;
+    font-size: 24px;
+  }
+
+  .social-label {
+    font-size: 14px;
+  }
+}
+
+/* ========================================
+   EXTRA RESPONSIVE FIXES
+   ======================================== */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 14px 16px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo {
+    font-size: 16px;
+    letter-spacing: 0.04em;
+    word-break: break-word;
+  }
+
+  .nav-links {
+    width: 100%;
+    gap: 8px;
+  }
+
+  body.bg-dokumentasi {
+    background-attachment: scroll;
+  }
+}
+
+@media (max-width: 640px) {
+  .section {
+    padding: 42px 14px;
+  }
+
+  .project-card {
+    padding: 18px;
+    border-radius: 14px;
+    margin-bottom: 24px;
+  }
+
+  .nav-links a {
+    font-size: 13px;
+    padding: 6px 9px;
+  }
+
+  .gallery-nav {
+    width: 36px;
+    height: 36px;
+    font-size: 24px;
+  }
+
+  .gallery-nav-left {
+    left: 6px;
+  }
+
+  .gallery-nav-right {
+    right: 6px;
+  }
+
+  .description {
+    font-size: 14px;
+    line-height: 1.65;
+  }
+}
+
+@media (max-width: 400px) {
+  .navbar {
+    padding: 12px;
+  }
+
+  .logo {
+    font-size: 14px;
+    letter-spacing: 0.02em;
+  }
+
+  .section {
+    padding: 34px 12px;
+  }
+
+  .section-title {
+    font-size: clamp(20px, 7vw, 26px);
   }
 }

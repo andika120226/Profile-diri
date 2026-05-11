@@ -3,20 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dokumentasi Projek & PKM | Portofolio</title>
+    <title > Dokumentasi Projek & PKM | Portofolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="style-dokumentasi.css" />
   </head>
-  <body>
+  <body class="bg-dokumentasi">
     <!-- NAVBAR -->
     <header class="site-header">
       <nav class="navbar" aria-label="Navigasi utama">
-        <a class="logo" href="index.html">ANDIKA</a>
+        <a class="logo" href="index.html">NUH ANDIKA HARYANTO</a>
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
           <li>
@@ -32,8 +36,8 @@
       <!-- PAGE HEADER -->
       <section class="section page-header">
         <div class="container center">
-          <h1 class="title">DOKUMENTASI PROJEK & PKM</h1>
-          <p class="subtitle">
+          <h1 class="title" style="color: navy;">DOKUMENTASI PROJEK & PKM</h1>
+          <p class="subtitle" style="color: navy;">
             Rekam jejak implementasi teknologi, tugas perkuliahan, dan
             pengabdian masyarakat.
           </p>
@@ -42,34 +46,36 @@
 
       <!-- SECTION A: PKM - ZIG-ZAG LAYOUT 1 (Text Left, Images Right) -->
       <section class="section pkm-section">
-        <div class="container split">
-          <div class="content">
-            <h2 class="section-title">MITRA DENGAN DURIAN BEKU LAMPUNG</h2>
-            <p class="description">
-              Sebagai bentuk implementasi tridarma perguruan tinggi, saya
-              melakukan proyek digitalisasi UMKM bekerja sama dengan Mitra
-              'Suplier Durian Beku Lampung' (@suplierdurianbekulampung). Proyek
-              ini berfokus pada pembuatan website <em>company profile</em> dan
-              katalog produk menggunakan platform WordPress untuk memperluas
-              jangkauan pasar digital mereka.
-            </p>
-          </div>
-          <div class="portrait-grid">
-            <div class="portrait-item">
-              <img
-                src="dokumentasi/pkm1.png"
-                alt="Dokumentasi PKM - Durian Beku Lampung 1"
-                loading="lazy"
-                decoding="async"
-              />
+        <div class="container">
+          <div class="project-card split">
+            <div class="content">
+              <h2 class="section-title">MITRA DENGAN DURIAN BEKU LAMPUNG</h2>
+              <p class="description">
+                Sebagai bentuk implementasi tridarma perguruan tinggi, saya
+                melakukan proyek digitalisasi UMKM bekerja sama dengan Mitra
+                'Suplier Durian Beku Lampung' (@suplierdurianbekulampung). Proyek
+                ini berfokus pada pembuatan website <em>company profile</em> dan
+                katalog produk menggunakan platform WordPress untuk memperluas
+                jangkauan pasar digital mereka.
+              </p>
             </div>
-            <div class="portrait-item">
-              <img
-                src="dokumentasi/pkm2.png"
-                alt="Dokumentasi PKM - Durian Beku Lampung 2"
-                loading="lazy"
-                decoding="async"
-              />
+            <div class="portrait-grid">
+              <div class="portrait-item">
+                <img
+                  src="dokumentasi/pkm1.webp"
+                  alt="Dokumentasi PKM - Durian Beku Lampung 1"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="portrait-item">
+                <img
+                  src="dokumentasi/pkm2.webp"
+                  alt="Dokumentasi PKM - Durian Beku Lampung 2"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -78,157 +84,163 @@
       <!-- SECTION B: IT INFRASTRUCTURE PROJECTS -->
       <section class="section projects-header">
         <div class="container center">
-          <h2 class="section-title">PROJEK INFRASTRUKTUR & KOMPUTASI AWAN</h2>
+          <h2 class="section-title" style="color: navy;">PROJEK INFRASTRUKTUR & KOMPUTASI AWAN</h2>
         </div>
       </section>
 
       <!-- SUB-SECTION B1: UBUNTU (Text Left, Scrolling Gallery Right) -->
       <section class="section ubuntu-section">
-        <div class="container split">
-          <div class="content">
-            <h3 class="subsection-title">MEMBUAT & MENGKONFIGURASI UBUNTU</h3>
-            <p class="description">
-              Proyek instalasi dan konfigurasi sistem operasi
-              <em>open-source</em> berbasis Linux (Ubuntu). Praktik ini mencakup
-              manajemen sistem dasar, pengenalan
-              <em>command line interface</em> (CLI), dan eksplorasi
-              <em>environment</em> Linux.
-            </p>
-          </div>
-          <div class="gallery-container">
-            <button
-              class="gallery-nav gallery-nav-left"
-              aria-label="Scroll left"
-            >
-              &#8249;
-            </button>
-            <div class="horizontal-gallery" id="ubuntuGallery">
-              <div class="gallery-slide">
-                <img
-                  src="dokumentasi/ubuntu1.png"
-                  alt="Ubuntu Screenshot 1"
-                  loading="lazy"
-                  decoding="async"
-                />
-              </div>
-              <div class="gallery-slide">
-                <img
-                  src="dokumentasi/ubuntu2.png"
-                  alt="Ubuntu Screenshot 2"
-                  loading="lazy"
-                  decoding="async"
-                />
-              </div>
-              <div class="gallery-slide">
-                <img
-                  src="dokumentasi/ubuntu3.png"
-                  alt="Ubuntu Screenshot 3"
-                  loading="lazy"
-                  decoding="async"
-                />
-              </div>
-              <div class="gallery-slide">
-                <img
-                  src="dokumentasi/ubuntu4.png"
-                  alt="Ubuntu Screenshot 4"
-                  loading="lazy"
-                  decoding="async"
-                />
-              </div>
+        <div class="container">
+          <div class="project-card split">
+            <div class="content">
+              <h3 class="subsection-title">MEMBUAT & MENGKONFIGURASI UBUNTU</h3>
+              <p class="description">
+                Proyek instalasi dan konfigurasi sistem operasi
+                <em>open-source</em> berbasis Linux (Ubuntu). Praktik ini mencakup
+                manajemen sistem dasar, pengenalan
+                <em>command line interface</em> (CLI), dan eksplorasi
+                <em>environment</em> Linux.
+              </p>
             </div>
-            <button
-              class="gallery-nav gallery-nav-right"
-              aria-label="Scroll right"
-            >
-              &#8250;
-            </button>
+            <div class="gallery-container">
+              <button
+                class="gallery-nav gallery-nav-left"
+                aria-label="Scroll left"
+              >
+                &#8249;
+              </button>
+              <div class="horizontal-gallery" id="ubuntuGallery">
+                <div class="gallery-slide">
+                  <img
+                    src="dokumentasi/ubuntu1.webp"
+                    alt="Ubuntu Screenshot 1"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                <div class="gallery-slide">
+                  <img
+                    src="dokumentasi/ubuntu2.webp"
+                    alt="Ubuntu Screenshot 2"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                <div class="gallery-slide">
+                  <img
+                    src="dokumentasi/ubuntu3.webp"
+                    alt="Ubuntu Screenshot 3"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                <div class="gallery-slide">
+                  <img
+                    src="dokumentasi/ubuntu4.webp"
+                    alt="Ubuntu Screenshot 4"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+              </div>
+              <button
+                class="gallery-nav gallery-nav-right"
+                aria-label="Scroll right"
+              >
+                &#8250;
+              </button>
+            </div>
           </div>
         </div>
       </section>
 
       <!-- SUB-SECTION B2: DEBIAN (Images Left, Text Right) -->
       <section class="section debian-section">
-        <div class="container split reverse">
-          <div class="image-stack">
-            <div class="stack-item">
-              <img
-                src="dokumentasi/debian1.png"
-                alt="Debian Installation Screenshot 1"
-                loading="lazy"
-                decoding="async"
-              />
+        <div class="container">
+          <div class="project-card split reverse">
+            <div class="image-stack">
+              <div class="stack-item">
+                <img
+                  src="dokumentasi/debian1.webp"
+                  alt="Debian Installation Screenshot 1"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="stack-item">
+                <img
+                  src="dokumentasi/debian2.webp"
+                  alt="Debian Installation Screenshot 2"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="stack-item">
+                <img
+                  src="dokumentasi/debian3.webp"
+                  alt="Debian Installation Screenshot 3"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
             </div>
-            <div class="stack-item">
-              <img
-                src="dokumentasi/debian2.png"
-                alt="Debian Installation Screenshot 2"
-                loading="lazy"
-                decoding="async"
-              />
+            <div class="content">
+              <h3 class="subsection-title">INSTALASI DEBIAN SERVER</h3>
+              <p class="description">
+                Melakukan instalasi distribusi Linux Debian. Fokus utama proyek
+                ini adalah memahami proses partisi disk, pengaturan jaringan
+                dasar, dan manajemen <em>package</em> melalui repositori resmi
+                Debian.
+              </p>
             </div>
-            <div class="stack-item">
-              <img
-                src="dokumentasi/debian3.png"
-                alt="Debian Installation Screenshot 3"
-                loading="lazy"
-                decoding="async"
-              />
-            </div>
-          </div>
-          <div class="content">
-            <h3 class="subsection-title">INSTALASI DEBIAN SERVER</h3>
-            <p class="description">
-              Melakukan instalasi distribusi Linux Debian. Fokus utama proyek
-              ini adalah memahami proses partisi disk, pengaturan jaringan
-              dasar, dan manajemen <em>package</em> melalui repositori resmi
-              Debian.
-            </p>
           </div>
         </div>
       </section>
 
       <!-- SUB-SECTION B3: OWNCLOUD (Text Left, Images Right) -->
       <section class="section owncloud-section">
-        <div class="container split">
-          <div class="content">
-            <h3 class="subsection-title">
-              DEPLOYMENT PRIVATE CLOUD DENGAN OWNCLOUD
-            </h3>
-            <p class="description">
-              Merupakan implementasi praktis dari mata kuliah Komputasi Awan
-              (<em>Cloud Computing</em>). Saya membangun solusi
-              <em>private cloud storage</em> menggunakan OwnCloud yang di-<em
-                >deploy</em
-              >
-              di atas sistem operasi Ubuntu Server. Proyek ini mendemonstrasikan
-              bagaimana data dapat dikelola, disinkronisasi, dan diakses secara
-              aman layaknya layanan <em>cloud</em> komersial.
-            </p>
-          </div>
-          <div class="image-stack">
-            <div class="stack-item">
-              <img
-                src="dokumentasi/one cloude.png"
-                alt="OwnCloud Dashboard Screenshot 1"
-                loading="lazy"
-                decoding="async"
-              />
+        <div class="container">
+          <div class="project-card split">
+            <div class="content">
+              <h3 class="subsection-title">
+                DEPLOYMENT PRIVATE CLOUD DENGAN OWNCLOUD
+              </h3>
+              <p class="description">
+                Merupakan implementasi praktis dari mata kuliah Komputasi Awan
+                (<em>Cloud Computing</em>). Saya membangun solusi
+                <em>private cloud storage</em> menggunakan OwnCloud yang di-<em
+                  >deploy</em
+                >
+                di atas sistem operasi Ubuntu Server. Proyek ini mendemonstrasikan
+                bagaimana data dapat dikelola, disinkronisasi, dan diakses secara
+                aman layaknya layanan <em>cloud</em> komersial.
+              </p>
             </div>
-            <div class="stack-item">
-              <img
-                src="dokumentasi/one cloude2.png"
-                alt="OwnCloud Dashboard Screenshot 2"
-                loading="lazy"
-                decoding="async"
-              />
-            </div>
-            <div class="stack-item">
-              <img
-                src="dokumentasi/one cloude3.png"
-                alt="OwnCloud Dashboard Screenshot 3"
-                loading="lazy"
-                decoding="async"
-              />
+            <div class="image-stack">
+              <div class="stack-item">
+                <img
+                  src="dokumentasi/one cloude.webp"
+                  alt="OwnCloud Dashboard Screenshot 1"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="stack-item">
+                <img
+                  src="dokumentasi/one cloude2.webp"
+                  alt="OwnCloud Dashboard Screenshot 2"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="stack-item">
+                <img
+                  src="dokumentasi/one cloude3.webp"
+                  alt="OwnCloud Dashboard Screenshot 3"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -237,144 +249,235 @@
 
     <section class="section projects-header">
       <div class="container center">
-        <h2 class="section-title">PROJEK PEMBUATAN WEBSITE</h2>
+        <h2 class="section-title" style="color: navy;">PROJEK PEMBUATAN WEBSITE</h2>
       </div>
     </section>
     <!-- WEB DEVELOPMENT PROJECT: KILAU CARWASH - ZIG-ZAG LAYOUT 2 (Image Left, Text Right) -->
     <section class="section kilau-section">
-      <div class="container split reverse">
-        <div class="project-image-container">
-          <img
-            src="dokumentasi/Web Kilau CaarWash.png"
-            alt="Website Kilau Carwash - Final Project"
-            loading="lazy"
-            decoding="async"
-            class="project-mockup"
-          />
-        </div>
-        <div class="content">
-          <h2 class="section-title">FINAL PROJECT: WEBSITE KILAU CARWASH</h2>
-          <p class="description">
-            Proyek akhir pengembangan website statis single-page untuk layanan
-            cuci mobil 'Kilau Carwash'. Website ini dirancang dan dibangun
-            secara khusus untuk memperkuat branding serta memperluas kehadiran
-            digital (<em>digital presence</em>) bisnis tersebut, menampilkan
-            informasi layanan dengan UI/UX yang responsif dan modern.
-          </p>
-          <a
-            href="https://kilau-caar-wash.netlify.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="cta-button"
-          >
-            Kunjungi Website ➔
-          </a>
-        </div>
-      </div>
-    </section>
-    <!-- WEB DEVELOPMENT PROJECT: KILAU CARWASH - ZIG-ZAG LAYOUT 2 (Image Left, Text Right) -->
-    <section class="section kilau-section">
-      <div class="container split reverse">
-        <div class="project-image-container">
-          <img
-            src="dokumentasi/MBG Bandar Lampung.png"
-            alt="Website MBG Bandar Lampung - Final Project"
-            loading="lazy"
-            decoding="async"
-            class="project-mockup"
-          />
-        </div>
-        <div class="content">
-          <h2 class="section-title">
-            FINAL PROJECT: WEBSITE MBG BANDAR LAMPUNG
-          </h2>
-          <p class="description">
-            Proyek akhir pengembangan website statis single-page untuk layanan
-            cuci mobil 'Kilau Carwash'. Website ini dirancang dan dibangun
-            secara khusus untuk memperkuat branding serta memperluas kehadiran
-            digital (<em>digital presence</em>) bisnis tersebut, menampilkan
-            informasi layanan dengan UI/UX yang responsif dan modern.
-          </p>
-          <a
-            href="https://pemantauan-gizi-mbg-kotabandar-lampun.netlify.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="cta-button"
-          >
-            Kunjungi Website ➔
-          </a>
+      <div class="container">
+        <div class="project-card split reverse">
+          <div class="project-image-container">
+            <img
+              src="dokumentasi/Web Kilau CaarWash.webp"
+              alt="Website Kilau Carwash - Final Project"
+              loading="lazy"
+              decoding="async"
+              class="project-mockup"
+            />
+          </div>
+          <div class="content">
+            <h2 class="section-title">FINAL PROJECT: WEBSITE KILAU CARWASH</h2>
+            <p class="description">
+              Proyek akhir pengembangan website statis single-page untuk layanan
+              cuci mobil 'Kilau Carwash'. Website ini dirancang dan dibangun
+              secara khusus untuk memperkuat branding serta memperluas kehadiran
+              digital (<em>digital presence</em>) bisnis tersebut, menampilkan
+              informasi layanan dengan UI/UX yang responsif dan modern.
+            </p>
+            <a
+              href="https://kilau-caar-wash.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="cta-button"
+            >
+              Kunjungi Website ➔
+            </a>
+          </div>
         </div>
       </div>
     </section>
     <!-- WEB DEVELOPMENT PROJECT: KILAU CARWASH - ZIG-ZAG LAYOUT 2 (Image Left, Text Right) -->
     <section class="section kilau-section">
-      <div class="container split reverse">
-        <div class="project-image-container">
-          <img
-            src="dokumentasi/Web Teknokrat.png"
-            alt="Website MBG Bandar Lampung - Final Project"
-            loading="lazy"
-            decoding="async"
-            class="project-mockup"
-          />
-        </div>
-        <div class="content">
-          <h2 class="section-title">
-            FINAL PROJECT: WEBSITE WEB TEKNOKRAT INDONESIA
-          </h2>
-          <p class="description">
-            Proyek akhir pengembangan website statis single-page untuk layanan
-            cuci mobil 'Kilau Carwash'. Website ini dirancang dan dibangun
-            secara khusus untuk memperkuat branding serta memperluas kehadiran
-            digital (<em>digital presence</em>) bisnis tersebut, menampilkan
-            informasi layanan dengan UI/UX yang responsif dan modern.
-          </p>
-          <a
-            href="https://web-teknokrat-indonesia.netlify.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="cta-button"
-          >
-            Kunjungi Website ➔
-          </a>
+      <div class="container">
+        <div class="project-card split reverse">
+          <div class="project-image-container">
+            <img
+              src="dokumentasi/MBG Bandar Lampung.webp"
+              alt="Website MBG Bandar Lampung - Final Project"
+              loading="lazy"
+              decoding="async"
+              class="project-mockup"
+            />
+          </div>
+          <div class="content">
+            <h2 class="section-title">
+              FINAL PROJECT: WEBSITE MBG BANDAR LAMPUNG
+            </h2>
+            <p class="description">
+              Proyek akhir pengembangan website statis single-page untuk layanan
+              cuci mobil 'Kilau Carwash'. Website ini dirancang dan dibangun
+              secara khusus untuk memperkuat branding serta memperluas kehadiran
+              digital (<em>digital presence</em>) bisnis tersebut, menampilkan
+              informasi layanan dengan UI/UX yang responsif dan modern.
+            </p>
+            <a
+              href="https://pemantauan-gizi-mbg-kotabandar-lampun.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="cta-button"
+            >
+              Kunjungi Website ➔
+            </a>
+          </div>
         </div>
       </div>
     </section>
     <!-- WEB DEVELOPMENT PROJECT: KILAU CARWASH - ZIG-ZAG LAYOUT 2 (Image Left, Text Right) -->
     <section class="section kilau-section">
-      <div class="container split reverse">
-        <div class="project-image-container">
-          <img
-            src="dokumentasi/FTIK Tekno.png"
-            alt="Website MBG Bandar Lampung - Final Project"
-            loading="lazy"
-            decoding="async"
-            class="project-mockup"
-          />
+      <div class="container">
+        <div class="project-card split reverse">
+          <div class="project-image-container">
+            <img
+              src="dokumentasi/Web Teknokrat.webp"
+              alt="Website MBG Bandar Lampung - Final Project"
+              loading="lazy"
+              decoding="async"
+              class="project-mockup"
+            />
+          </div>
+          <div class="content">
+            <h2 class="section-title">
+              FINAL PROJECT: WEBSITE WEB TEKNOKRAT INDONESIA
+            </h2>
+            <p class="description">
+              Proyek akhir pengembangan website statis single-page untuk layanan
+              cuci mobil 'Kilau Carwash'. Website ini dirancang dan dibangun
+              secara khusus untuk memperkuat branding serta memperluas kehadiran
+              digital (<em>digital presence</em>) bisnis tersebut, menampilkan
+              informasi layanan dengan UI/UX yang responsif dan modern.
+            </p>
+            <a
+              href="https://web-teknokrat-indonesia.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="cta-button"
+            >
+              Kunjungi Website ➔
+            </a>
+          </div>
         </div>
-        <div class="content">
-          <h2 class="section-title">
-            FINAL PROJECT: WEBSITE WEB FTIK TEKNOKRAT INDONESIA
-          </h2>
-          <p class="description">
-            Proyek akhir pengembangan website statis single-page untuk layanan
-            cuci mobil 'Kilau Carwash'. Website ini dirancang dan dibangun
-            secara khusus untuk memperkuat branding serta memperluas kehadiran
-            digital (<em>digital presence</em>) bisnis tersebut, menampilkan
-            informasi layanan dengan UI/UX yang responsif dan modern.
-          </p>
-          <a
-            href="https://web-ftik-teknokrat-indonesia.netlify.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="cta-button"
-          >
-            Kunjungi Website ➔
-          </a>
+      </div>
+    </section>
+    <!-- WEB DEVELOPMENT PROJECT: KILAU CARWASH - ZIG-ZAG LAYOUT 2 (Image Left, Text Right) -->
+    <section class="section kilau-section">
+      <div class="container">
+        <div class="project-card split reverse">
+          <div class="project-image-container">
+            <img
+              src="dokumentasi/FTIK Tekno.webp"
+              alt="Website MBG Bandar Lampung - Final Project"
+              loading="lazy"
+              decoding="async"
+              class="project-mockup"
+            />
+          </div>
+          <div class="content">
+            <h2 class="section-title">
+              FINAL PROJECT: WEBSITE WEB FTIK TEKNOKRAT INDONESIA
+            </h2>
+            <p class="description">
+              Proyek akhir pengembangan website statis single-page untuk layanan
+              cuci mobil 'Kilau Carwash'. Website ini dirancang dan dibangun
+              secara khusus untuk memperkuat branding serta memperluas kehadiran
+              digital (<em>digital presence</em>) bisnis tersebut, menampilkan
+              informasi layanan dengan UI/UX yang responsif dan modern.
+            </p>
+            <a
+              href="https://web-ftik-teknokrat-indonesia.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="cta-button"
+            >
+              Kunjungi Website ➔
+            </a>
+          </div>
         </div>
       </div>
     </section>
 
+    <!-- PROFESSIONAL FOOTER -->
+    <footer class="site-footer">
+      <div class="footer-content">
+        <!-- Social Media Icons -->
+        <div class="social-links">
+          <a
+            href="https://wa.me/6282175424507"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social-link"
+            aria-label="WhatsApp"
+          >
+            <div class="social-icon-circle">
+              <i class="fab fa-whatsapp"></i>
+            </div>
+            <span class="social-label">WhatsApp</span>
+          </a>
+          <a
+            href="https://instagram.com/aandzzzzyy"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social-link"
+            aria-label="Instagram"
+          >
+            <div class="social-icon-circle">
+              <i class="fab fa-instagram"></i>
+            </div>
+            <span class="social-label">Instagram</span>
+          </a>
+          <a
+            href="https://www.tiktok.com/@lexsenio"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social-link"
+            aria-label="TikTok"
+          >
+            <div class="social-icon-circle">
+              <i class="fab fa-tiktok"></i>
+            </div>
+            <span class="social-label">TikTok</span>
+          </a>
+          <a
+            href="mailto:nuhdika173@gmail.com"
+            class="social-link"
+            aria-label="Email"
+          >
+            <div class="social-icon-circle">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <span class="social-label">Email</span>
+          </a>
+          <a href="#" class="social-link" aria-label="Discord">
+            <div class="social-icon-circle">
+              <i class="fab fa-discord"></i>
+            </div>
+            <span class="social-label">Discord</span>
+          </a>
+          <a href="#" class="social-link" aria-label="LinkedIn">
+            <div class="social-icon-circle">
+              <i class="fab fa-linkedin"></i>
+            </div>
+            <span class="social-label">LinkedIn</span>
+          </a>
+          <a href="#" class="social-link" aria-label="Facebook">
+            <div class="social-icon-circle">
+              <i class="fab fa-facebook"></i>
+            </div>
+            <span class="social-label">Facebook</span>
+          </a>
+        </div>
+
+        <!-- Divider -->
+        <div class="footer-divider"></div>
+
+        <!-- Copyright -->
+        <p class="footer-copyright">
+          &copy; 2026 Nuh Andika Haryanto. All rights reserved. | Bandar
+          Lampung, Indonesia
+        </p>
+      </div>
+    </footer>
+
     <script src="script-dokumentasi.js"></script>
+    <script src="responsive-bg.js"></script>
   </body>
 </html>
