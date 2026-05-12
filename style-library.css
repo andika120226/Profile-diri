@@ -50,12 +50,12 @@ body > * {
 }
 
 /* Specific rotated background for Library (bg-game) on desktop */
-body.bg-game::before {
+body.bg-game::after {
   content: "";
   position: fixed;
-  top: 54%;
+  top: 52%;
   left: 50%;
-  width: 90vh;
+  width: 110vh;
   height: 100vw;
   background: url("game/banner6.webp") center/cover no-repeat;
   transform: translate(-50%, -50%) rotate(270deg);
